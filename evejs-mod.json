@@ -1,0 +1,38 @@
+{
+  "author": {
+    "id": "au-mujkaep5shgv",
+    "keyId": "2792fbac9b88",
+    "name": "匿名"
+  },
+  "category": "玩法",
+  "changelog": "",
+  "conflicts": [],
+  "delisted": false,
+  "description": "实验性、仅供个人本地试用：星际公民舰长室。在太空里驾驶仙女座（930001）时进入舰内，以第一人称在《星际公民》原版内饰里走动（WASD + 鼠标，Shift 跑，空格跳，V 切换穿墙飞行，Ctrl+Alt+I 或 SC 面板的按钮进出）。内饰从玩家自己的 SC 安装解出来（tools/ 下的流水线），作为一个额外的 SOF 船体按外壳同样的比例装进船里；碰撞用离线烘焙的 0.1 米体素格。需要主控 MOD evejs-sc-ships（0.3.1 之后带附加 MOD 支持的版本）。不修改服务端和客户端文件。",
+  "displayName": "星际公民舰长室 (SC Quarters)",
+  "downloadUrls": [
+    {
+      "mirror": "github",
+      "priority": 1,
+      "url": "https://github.com/xuenaimiao/evejs-mod-evejs-sc-quarters/releases/download/v0.1.0/evejs-sc-quarters-0.1.0.zip"
+    }
+  ],
+  "evejsVersions": [
+    "261018.1"
+  ],
+  "featured": false,
+  "highlights": [],
+  "history": [],
+  "id": "evejs-sc-quarters",
+  "publishedAt": "2026-10-24",
+  "readme": [
+    "> **实验性，仅供个人本地试用。** 内饰来自玩家自己的《星际公民》安装（`tools/` 下的流水线），不随仓库分发；本 MOD 不修改服务端和客户端文件。",
+    "主控 MOD `evejs-sc-ships` 的附加 MOD：在太空里驾驶仙女座（Constellation Andromeda，typeID 930001）时进入舰内，以第一人称在 SC 原版内饰里走动。"
+  ],
+  "repo": "https://github.com/xuenaimiao/evejs-mod-evejs-sc-quarters",
+  "requiresRestart": true,
+  "sha256": "f41f686f084a13b82abb19851c3e0b0870c3f6c2a7f49d87bd52b02cd2998771",
+  "sizeBytes": 73498370,
+  "tags": [],
+  "version": "0.1.0"
+}
