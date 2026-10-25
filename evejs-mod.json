@@ -4,17 +4,17 @@
     "keyId": "2792fbac9b88",
     "name": "匿名"
   },
-  "category": "玩法",
-  "changelog": "",
+  "category": "舰船",
+  "changelog": "修复兼容",
   "conflicts": [],
   "delisted": false,
-  "description": "实验性、仅供个人本地试用：星际公民舰长室。在太空里驾驶仙女座（930001）时进入舰内，以第一人称在《星际公民》原版内饰里走动（WASD + 鼠标，Shift 跑，空格跳，V 切换穿墙飞行，Ctrl+Alt+I 或 SC 面板的按钮进出）。内饰从玩家自己的 SC 安装解出来（tools/ 下的流水线），作为一个额外的 SOF 船体按外壳同样的比例装进船里；碰撞用离线烘焙的 0.1 米体素格。需要主控 MOD evejs-sc-ships（0.3.1 之后带附加 MOD 支持的版本）。不修改服务端和客户端文件。",
+  "description": "实验性、仅供个人本地试用：星际公民舰长室。在太空里驾驶仙女座（930001）时进入舰内，以第一人称在《星际公民》原版内饰里走动（WASD + 鼠标，Shift 跑，空格跳，V 切换穿墙飞行，Ctrl+Alt+I 或 SC 面板的按钮进出）。内饰从玩家自己的 SC 安装解出来（tools/ 下的流水线），作为一个额外的 SOF 船体按外壳同样的比例装进船里；碰撞用离线烘焙的 0.1 米体素格。需要主控 MOD evejs-sc-ships 0.3.2 或更新；没装、没启用或太旧时，进游戏会弹窗提示（并写进服务端日志）。不修改服务端和客户端文件。",
   "displayName": "星际公民舰长室 (SC Quarters)",
   "downloadUrls": [
     {
       "mirror": "github",
       "priority": 1,
-      "url": "https://github.com/xuenaimiao/evejs-mod-evejs-sc-quarters/releases/download/v0.1.0/evejs-sc-quarters-0.1.0.zip"
+      "url": "https://github.com/xuenaimiao/evejs-mod-evejs-sc-quarters/releases/download/v0.1.1/evejs-sc-quarters-0.1.1.zip"
     }
   ],
   "evejsVersions": [
@@ -24,15 +24,24 @@
   "highlights": [],
   "history": [],
   "id": "evejs-sc-quarters",
-  "publishedAt": "2026-10-24",
+  "publishedAt": "2026-10-25",
   "readme": [
     "> **实验性，仅供个人本地试用。** 内饰来自玩家自己的《星际公民》安装（`tools/` 下的流水线），不随仓库分发；本 MOD 不修改服务端和客户端文件。",
-    "主控 MOD `evejs-sc-ships` 的附加 MOD：在太空里驾驶仙女座（Constellation Andromeda，typeID 930001）时进入舰内，以第一人称在 SC 原版内饰里走动。"
+    "主控 MOD `evejs-sc-ships` 的附加 MOD：在太空里驾驶仙女座（Constellation Andromeda，typeID 930001）时进入舰内，以第一人称在 SC 原版内饰里走动。",
+    "**依赖：** 需要主控 MOD「星际公民舰船」（`evejs-sc-ships`）**0.3.2 或更新**，先装好并启用它。没装、没启用或版本太旧时，本 MOD 不会生效（游戏里不会出现舰长室的图标和快捷键）；这时**进入游戏会弹出提示窗**，写明缺什么、怎么装，服务端日志里也有一行 `[SCQuarters] NOT ACTIVE …`。按提示装好后重启服务端即可。`EVEJS_SCQUARTERS_CHECK=0` 可以关掉这个检测和弹窗。",
+    "> 清单里故意没有写 `requires`：写了的话，启动器在主控 MOD 缺失时会干脆不加载本 MOD，也就没法弹窗告诉你原因。",
+    "**0.1.1**：新增依赖检测与进游戏弹窗；客户端日志、音量设置、截图不再写开发机的固定路径（同一台电脑时在 `server/logs/sc-ships/`，否则在游戏客户端自己的缓存目录）；配置缺失时按钮和快捷键会给出提示。"
   ],
   "repo": "https://github.com/xuenaimiao/evejs-mod-evejs-sc-quarters",
   "requiresRestart": true,
-  "sha256": "f41f686f084a13b82abb19851c3e0b0870c3f6c2a7f49d87bd52b02cd2998771",
-  "sizeBytes": 73498370,
-  "tags": [],
-  "version": "0.1.0"
+  "sha256": "ad42e0a3bb6ef8a12f93887c9c4eb95de0e7689cf0a04d04dccf5b95934ef5bf",
+  "sizeBytes": 73497229,
+  "tags": [
+    "星际公民",
+    "Star",
+    "Citizen",
+    "舰长室",
+    "第一人称"
+  ],
+  "version": "0.1.1"
 }
